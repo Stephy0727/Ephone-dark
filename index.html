@@ -47,11 +47,11 @@ body {
 
 /* 5. 【核心】让聊天输入框和底部导航栏自动适应iPhone底部的“小黑条”安全区 */
 #chat-input-area {
-    padding-bottom: calc(-20px + env(safe-area-inset-bottom));
+    padding-bottom: calc(8px + env(safe-area-inset-bottom));
 }
 
 #chat-list-bottom-nav {
-     padding-bottom: calc(-20px + env(safe-area-inset-bottom));
+     padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* 6. 修正模态框的 z-index，确保它在最顶层 */
@@ -1700,7 +1700,7 @@ body {
     right: 0;           /* ★ 新增 right: 0，和 left: 0 一起撑满宽度 */
     width: auto;        /* ★ 改为 auto，让 left/right 决定宽度 */
     padding: 10px 15px;
-    padding-bottom: calc(-20px + env(safe-area-inset-bottom)); /* 适配iPhone底部安全区 */
+    padding-bottom: calc(10px + env(safe-area-inset-bottom)); /* 适配iPhone底部安全区 */
     background-color: rgba(247, 247, 247, 0.9);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -3654,7 +3654,7 @@ input[type="checkbox"] {
       }
       
     </style>
-    <!-- 你的 PWA 相关代码放这里 -->
+        <!-- 你的 PWA 相关代码放这里 -->
     <!-- PWA manifest 链接 -->
     <link rel="manifest" href="/manifest.json">
     
@@ -3662,7 +3662,6 @@ input[type="checkbox"] {
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="EPhone-Dark">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
     <link rel="apple-touch-icon" href="https://i.postimg.cc/FFS4Q915/1.jpg">
     
     <!-- 主题颜色 -->
